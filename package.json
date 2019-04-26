@@ -1,0 +1,32 @@
+{
+  "name": "environment-land-management-role-based-security",
+  "version": "1.0.0",
+  "description": "Spike to investigate role management for ELM",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markysoft/azure-func-spike.git"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "start-watch": "nodemon --inspect=0.0.0.0",
+    "lint": "standard",
+    "unit-test": "lab -c -r console -o stdout -r lcov -o lcov.info",
+    "unit-test-watch": "nodemon --inspect=0.0.0.0 --exec npm run unit-test",
+    "pretest": "npm run lint",
+    "test": "npm run unit-test"
+  },
+  "author": "Mark Harrop, Matthew Collins, John Watson",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "code": "5.2.4",
+    "codeclimate-test-reporter": "0.5.1",
+    "lab": "18.0.2",
+    "nodemon": "1.18.10",
+    "standard": "12.0.1"
+  }
+}
